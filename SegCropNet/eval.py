@@ -5,7 +5,7 @@ import sys
 import torch
 from dataloader.data_loaders import TusimpleSet
 from dataloader.transformers import Rescale
-from model.SegCropNet.SegCropNet import LaneNet
+from model.SegCropNet.SegCropNet import SegCropNet
 from torch.utils.data import DataLoader, dataloader
 from torch.autograd import Variable
 
@@ -41,7 +41,7 @@ def evaluation():
     eval_dataloader = DataLoader(Eval_Dataset, batch_size=1, shuffle=True)
 
     model_path = args.model
-    model = LaneNet(arch=args.model_type)
+    model = SegCropNet(arch=args.model_type)
     state_dict = torch.load(model_path)
     model.load_state_dict(state_dict)
     model.eval()
