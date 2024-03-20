@@ -14,10 +14,10 @@ In crop line detection and fitting, we comprehensively consider perspective dist
 ## Experiments
 You can now test our SegCropNet by:
 ```
-python test.py --img ./imgs/pic_1.jpg --model_type ENet --model ./log/best_model.pth --width 512 --height 256 --save ./test_output  
+python test.py --img ./imgs/pic_1.jpg --model_type choosedmodel --model ./log/best_model.pth --width 512 --height 256 --save ./test_output  
 ```
 
 or you can train it by yourself as follows:
 ```
-python train.py --dataset ./data/sets --model_type ENet --lose_type FocalLoss --save ./log --json config.json
+python train.py --dataset ./data/sets --model_type choosedmodel --lose_type FocalLoss --save ./log --json config.json
 ```
