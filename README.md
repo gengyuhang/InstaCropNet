@@ -9,7 +9,7 @@ We propose a dual-branch network to better train machines to recognize ROI regio
 In crop line detection and fitting, we comprehensively consider perspective distortion, road curvature and image quality, and obtain more robust and accurate crop line detection results
 ![image path2](https://p.ipic.vip/j7ciln.jpeg)
 
-## Results of different models
+## Results of different models(Average distance deviation from ground truth (pixels))
 ![image path3](https://p.ipic.vip/3qaevj.jpeg)
 ## Experiments
 You can now test our SegCropNet by:
